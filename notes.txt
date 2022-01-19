@@ -1,0 +1,25 @@
+Subnetting:
+https://www.auvik.com/franklyit/blog/subnetting-primer/#:~:text=What%20is%20subnetting%3F,has%20only%20one%20IP%20address.
+
+Tryhackme course:
+https://tryhackme.com/room/introtolan
+
+ping
+The ping command sends a request over the network to a specific device.
+A successful ping results in a response from the computer that was pinged back to the originating computer.
+https://linux.die.net/man/8/ping
+https://www.paessler.com/it-explained/ping
+
+arp 
+manipulate the system ARP cache
+-a: to get a list of all other IP addresses active on your network (after ping)
+https://linux.die.net/man/8/arp
+
+netstat
+For active Internet connections
+Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+https://linux.die.net/man/8/netstat
+
+nslookup
+to query Internet name servers interactively
+https://linux.die.net/man/1/nslookup
