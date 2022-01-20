@@ -1,0 +1,5 @@
+to do so we need to paste IP and name to etc/hosts file
+
+should be: 
+echo '46.19.122.85 intra.42.fr' >> /etc/hosts
+
