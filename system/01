@@ -1,0 +1,7 @@
+answer: /etc/debian_version
+
+my version: 11.2
+
+
+another : /etc/os-release 
+file which contains operating system identification data, and can be found only on the newer Debian distributions running systemd

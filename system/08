@@ -1,0 +1,8 @@
+answer:
+~/.ssh/authorized_keys
+
+
+An RSA key pair includes a private and a public key. The RSA private key is used to generate digital signatures, and the RSA public key is used to verify digital signatures. 
+
+The AuthorizedKeysFile keyword specifies the file containing public keys for public key authentication. 
+If none is specified, the default is ~/.ssh/authorized_keys and ~/.
