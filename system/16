@@ -1,0 +1,5 @@
+answer:
+cron
+
+crontab -e
+to specify date and time to scedule any command, can save to /tmp/txt.txt for example to show how it works
