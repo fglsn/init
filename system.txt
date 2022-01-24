@@ -135,4 +135,6 @@ https://net2.com/how-to-list-start-and-stop-services-at-boot-time-in-linux-ubunt
 useradd vs. adduser
 https://askubuntu.com/questions/345974/what-is-the-difference-between-adduser-and-useradd
 
-
+apt tool
+get a list of packages installed
+https://askubuntu.com/questions/17823/how-to-list-all-installed-packages
