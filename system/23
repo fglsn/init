@@ -1,0 +1,9 @@
+on VM: 
+- close virtual machine, start again, insert new users login and password
+- sudo -u (go to root user)
+- usermod -aG sudo <new username> (to add it in sudo users aka admin)
+- su <new username>
+- sudo service ssh restart
+
+on host machine: 
+- ssh <newusername>@<ip (127.0.0.1)> -p <port (2222)>
