@@ -1,0 +1,147 @@
+help -command
+to see all built-in commands 
+
+date -command 
+to check date and time on machine
+
+Install sudo command
+https://linuxhint.com/how-to-fix-debian-sudo-command-not-found/#:~:text=By%20default%20in%20Debian%2C%20the,it%20generates%20the%20following%20error.&text=So%20it%20means%20that%20the,mode%20and%20install%20the%20package.&text=Install%20the%20sudo%20package.
+List admins (helped installing sudo)
+https://superuser.com/questions/456762/list-admins-on-linux
+
+sudo apt-update 
+sudo apt-get dist-upgrade (if something left to be updated)
+sudo apt install net-tools
+
+usermod -aG sudo <username>
+to give user use sudo
+
+to install ifconfig
+https://www.how2shout.com/linux/install-ifconfigon-debian-11-or-10-if-command-not-found/
+
+exit && su <username> - to reboot terminal
+
+x11 forwarding
+X11 forwarding is a mechanism that allows a user to start up remote applications but forward the application display to your local Windows machine.
+https://www.businessnewsdaily.com/11035-how-to-use-x11-forwarding.html#:~:text=X11%20forwarding%20is%20a%20mechanism,to%20your%20local%20Windows%20machine.
+
+system name/machine name
+https://linuxize.com/post/how-to-change-hostname-on-debian-10/
+
+modify file /etc/hosts
+to change hostname/machine name
+
+uptime -command 
+Tells how long the Linux system has been running
+https://www.cyberciti.biz/faq/how-do-you-find-the-uptime-of-a-linux-server/	
+
+who -b |or| last reboot -commands
+To find last system reboot
+https://www.cyberciti.biz/tips/linux-last-reboot-time-and-date-find-out.html
+
+--
+service sshd status -command
+SSH is an acronym for Secure Shell. 
+It is an Internet communication protocol that allows log into Linux or Unix bases systems and runs commands.
+https://linuxhint.com/check-if-ssh-is-running-on-linux/
+https://cplusprogrammer.wordpress.com/2016/10/17/how-to-check-if-ssh-is-running-on-linux/
+
+
+Restarting ssh:
+https://www.cyberciti.biz/faq/howto-restart-ssh/
+https://www.cyberciti.biz/faq/how-do-i-restart-sshd-daemon-on-linux-or-unix/
+--
+
+pid
+Process ID of sshd
+https://www.ibm.com/docs/en/z-system-automation/4.1.0?topic=automation-example-sshd
+
+RSA 
+https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29
+
+w -command
+is used to show logged-in user names and what they are doing
+The information will be read from /var/run/utmp file
+
+who -command
+used to get the list of the usernames who are currently logged in
+users -command is used to print the user name who are all currently logged in the current host
+https://www.thegeekstuff.com/2009/03/4-ways-to-identify-who-is-logged-in-on-your-linux-system/#:~:text=whoami%20command%20is%20used%20to%20print%20the%20loggedin%20user%20name.&text=who%20am%20i%20command%20will,this%20users%20initiated%20the%20connection.
+
+View all Disk Partitions in Linux
+https://www.tecmint.com/fdisk-commands-to-manage-linux-disk-partitions/
+
+df -command
+Shows the amount of disk space used and available on Linux file systems.
+http://blog.imm.cnr.it/content/linux-check-disk-space-command-view-system-disk-usage-df-and-du#:~:text=df%20command%20%E2%80%93%20Shows%20the%20amount,available%20on%20Linux%20file%20systems.
+
+du -command with flags
+displays the amount of file space used by the specified files or directories
+https://linuxize.com/post/how-get-size-of-file-directory-linux/
+
+top -command
+real-time sorted list of top processes that use the most memory or CPU
+https://www.freecodecamp.org/news/linux-list-processes-how-to-check-running-processes/#:~:text=The%20ps%20command%20displays%20your,returns%20the%20unique%20process%20ID
+
+--
+background processes
+https://www.howtogeek.com/440848/how-to-run-and-control-background-processes-on-linux/
+
+jobs -command 
+to see jobs in process, number in [] is job number
+
+ps T -command (T stands for terminal)
+to see processes with PIDs, statuses and command lines
+
+pidof -command
+to show PID of spesific command by it's name
+
+kill -command to terminate/kill proccess knowing PID
+https://linuxize.com/post/kill-command-in-linux/
+
+pkill -command 
+to terminate specific proccess by its 'name'
+https://linux.die.net/man/1/pkill
+--
+
+--
+cron
+https://en.wikipedia.org/wiki/Cron
+job scheduler
+
+how to activate cron
+https://www.kinamo.be/en/support/faq/how-to-activate-cron-log-on-debian
+--
+
+--
+sudo apt-get install openssh-server
+
+How to connect via SSH by port forwarding
+https://unix.stackexchange.com/questions/323453/unable-to-connect-to-ssh-server-from-macos
+
+- Disable VM
+- VirtualBox Settings > Network > Advanced > Port Forwarding
+- HOST IP: 127.0.0.1 , HOST Port: any big one (for ex 2222)
+- GUEST IP: VM IP address, GUEST Port: 22
+- On VM: sudo ssh service start (check status with: sudo ssh service status)
+- On Host machine: ssh <login>@127.0.0.1 -p 2222
+- Provide password of user on VM 
+			profit!
+--
+
+man systemd
+https://man7.org/linux/man-pages/man1/systemd.1.html
+
+man systemctl
+https://man7.org/linux/man-pages/man1/systemctl.1.html
+https://askubuntu.com/questions/912216/16-04-command-to-list-all-services-started-on-boot
+https://net2.com/how-to-list-start-and-stop-services-at-boot-time-in-linux-ubuntu-debian/
+
+https://askubuntu.com/questions/257421/list-all-human-users
+
+useradd vs. adduser
+https://askubuntu.com/questions/345974/what-is-the-difference-between-adduser-and-useradd
+
+apt tool
+get a list of packages installed
+https://askubuntu.com/questions/17823/how-to-list-all-installed-packages
