@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DIR=testscript/
+
+if [ ! -d ${DIR} ]; then mkdir -p ${DIR}; fi
+
+cd ./${DIR}
+echo "--testscript directory created--" 
+echo "Timestamp:" >> test.txt
+echo `date | awk '{print $4}'` >> test.txt
+cat test.txt

