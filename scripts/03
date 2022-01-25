@@ -1,11 +1,19 @@
 #!/bin/bash
+DIR=$1
+FILECOUNT=$2
 
-DIR=testscript/
+if [ -z "${DIR}" ] || [ -z "${FILECOUNT}" ]
+then
+	echo "usage: sh 03 <directory> <file count>"
+	exit 1
+fi
 
-if [ ! -d ${DIR} ]; then mkdir -p ${DIR}; fi
+if [ ! -d "${DIR}" ]; then mkdir -p "${DIR}"; fi
+cd "${DIR}"/ || exit 1
 
-cd ./${DIR}
-echo "--testscript directory created--" 
-echo "Timestamp:" >> test.txt
-echo `date | awk '{print $4}'` >> test.txt
-cat test.txt
+for (( i=01; i<=FILECOUNT; i++ ))
+do
+	FILE=$(printf "%02d" "$i")
+	touch "$FILE"
+done
+
