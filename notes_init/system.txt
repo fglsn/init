@@ -58,6 +58,9 @@ https://www.ibm.com/docs/en/z-system-automation/4.1.0?topic=automation-example-s
 
 RSA 
 https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29
+authorized_keys: No such file or directory
+https://askubuntu.com/questions/466549/bash-home-user-ssh-authorized-keys-no-such-file-or-directory
+https://stackoverflow.com/questions/22530886/ssh-copy-id-no-identities-found-error
 
 w -command
 is used to show logged-in user names and what they are doing
